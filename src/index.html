@@ -6,9 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="TopBar">
+        <a id="Home">Home</a>
+        <a id="Ayuda">Ayuda</a>
+        <a id="Carrito">Carrito</a>
+        <a id="Mi cuenta">Mi cuenta</a>
+      </div>
+
+    </header>
+    <main>
+      <div class="ContactInfo">
+        <ul><img src="LogoPets.png" alt="LogoPets"></ul>
+        <ul><div>Para completar su compra necesitamos validar su tarjeta de credito</div></ul>
+        <ul><input id="cardnumber" type="number" maxlength="18" placeholder="Ingrese Numero de Tarjeta aqui"></ul>
+        <ul><button id="BtnValidar">Validar</button></ul>
+        <ul><div id="result"></div></ul>
+      </div>
+
+    </main>
+    
+    <footer>
+      <div class="FootPage">
+        <a>Siguenos en Nuestras redes sociales</a>
+        <a>Atención a clientes</a>
+        <a>Politicas de Privacidad</a>
+      </div>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
