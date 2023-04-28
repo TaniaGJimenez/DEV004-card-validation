@@ -15,6 +15,7 @@ const validator = {
     let sum = 0;
     //For que recorre todo mi array
     for (let i = 0; i < nums.length; i++) {
+      /*Aqui estoy tomando el array desde la posición 0 o sea que estoy sumando los impares*/
       if (i % 2 === 0) {
         const numG1 = (nums[i]);
         sum+= numG1;
