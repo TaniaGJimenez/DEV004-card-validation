@@ -6,44 +6,85 @@ body {
   color: white;
   background-image: url(BackgroundImgPets.jpg);
 }
-header {
+header, footer {
   display: flex;
-  justify-content: space-between;
   background-color: rgb(41, 41, 148);
-  padding: 10px 10px 30px 30px;
+  padding: 10px;
 }
-
+header{
+  justify-content: space-between;
+}
 footer {
-  display: flex;
   justify-content: flex-end;
-  background-color: rgb(41, 41, 148);
-  padding: 10px 10px 30px 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 main {
-  display: flex;
-  justify-content: center;
+display: flex;
+align-items: center;
+flex-direction: column;
+align-content: center;
 }
 
-.ContactInfo {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  border-radius: 200px;
-  border-width: 200px;
+h2{
+  margin: 10px;
   color: black;
 }
+.titlePage{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ContactInfo {
+  color: rgb(0, 0, 0);
+  margin: 0 15px 0 15px;
+  border-radius: 200px;
+  border-width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+p, input, button{
+  padding: 10px;
+}
+
+input{
+  border: none;
+  border-radius: 10px;
+  width:25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button{
+  width:15rem;
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+
+}
 ul li {
 margin: 10px;
-padding: 7px;
+padding: 5px;
 list-style-type: none;
 float: left;
 }
 
 img {
-  border-radius: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
+  border-radius: 10px;
+  width: 50vh;
 }
